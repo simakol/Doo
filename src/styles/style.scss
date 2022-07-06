@@ -1,4 +1,6 @@
-h1{
-  text-align: center;
-  color: red;
-}
+@import "fonts.scss";
+@import "reset.scss";
+@import "variables.scss";
+@import "global.scss";
+// @import "animations.scss";
+@import "components/header.scss";
