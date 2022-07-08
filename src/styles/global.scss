@@ -1,3 +1,21 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 15px;
+}
+::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
 .container {
   margin: 0 auto;
   text-align: center;

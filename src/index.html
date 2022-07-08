@@ -11,8 +11,114 @@
 
 <body>
     @@include("./components/header.html")
-    <main>
-        
+    <main class="main">
+        <div class="container">
+            <h1 class="main-title">Simplify your to-do list</h1>
+            <a href="#" class="download-button">
+                <img src="./img/download.png" alt="download on the app store">
+            </a>
+        </div>
+        <img class="main-image" src="./img/phones.png" alt="iphones with app demonstration">
+
+        @@include("./components/benefits.html", {
+            "type": "1",
+            "benefit_1": {
+                "imgPath": "./img/logos/benefits/benefit_1.svg",
+                "imgAlt": "phone",
+                "description": "Create tasks with a clear, achievable goal."
+            },
+            "benefit_2": {
+                "imgPath": "./img/logos/benefits/benefit_2.svg",
+                "imgAlt": "star",
+                "description": "Pick a few tasks each day and snooze the rest."
+            },
+            "benefit_3": {
+                "imgPath": "./img/logos/benefits/benefit_3.svg",
+                "imgAlt": "blocks",
+                "description": "Build sustainable habits that feel invisible."
+            },
+        })
+
+        @@include("./components/description.html", {
+        "titleText": "Designed with purpose",
+        "subtitleText": "Popular productivity apps have tagging, color coding, folders, and subfolders. They call it organization. We call it bloat. Doo is everything you need and nothing you don't.",
+        "imagesAmount": "1",
+        "imgPath": "./img/description-phone_1.png"
+        })
+
+        @@include("./components/description.html", {
+        "titleText": "Effortless task entry",
+        "subtitleText": "Create a task by typing a title. Tap an icon above the keyboard to set dates, locations, notes, and more. Edit by tapping the text you'd like to change. Simple.",
+        "imagesAmount": "1",
+        "imgPath": "./img/description-phone_2.png"
+        })
+
+        @@include("./components/description.html", {
+        "titleText": "One-step habit building",
+        "subtitleText": "Tap the Edit button to select your tasks for the day and snooze the rest. Doo helps you focus and avoid productivity guilt.",
+        "imagesAmount": "1",
+        "imgPath": "./img/description-phone_1.png"
+        })
+
+        @@include("./components/description.html", {
+        "titleText": "Keeps your data private",
+        "subtitleText": "Privacy is a fundamental right. That's why Doo includes screen locking. No 'Pro' upgrade required. We also don't collect your data. What does this mean? No trackers, no cookies, and no analytics. Simple — the way it should be.",
+        "imagesAmount": "2",
+        "img1Path": "./img/lock.png",
+        "img2Path": "./img/unlock.png"
+        })
+
+        <div class="features container">
+            <h2 class="features-title">Other things you might be wondering about</h2>
+
+            @@include("./components/benefits.html", {
+                  "type": "2",
+                "benefit_1": {
+                    "imgPath": "./img/logos/benefits/benefit_4.svg",
+                    "imgAlt": "voice waves",
+                    "title": "Ask Siri",
+                    "description": "Use Siri to create tasks, a new list, or mark items completed."
+                },
+                "benefit_2": {
+                    "imgPath": "./img/logos/benefits/benefit_5.svg",
+                    "imgAlt": "blocks",
+                    "title": "Widget",
+                    "description": "Ready for iOS 14. View your most recently due task or up to three recent items from any list."
+                },
+                "benefit_3": {
+                    "imgPath": "./img/logos/benefits/benefit_6.svg",
+                    "imgAlt": "user",
+                    "title": "Task Collaboration",
+                    "description": "Share reminders using iMessage, email, or any other text-based service. Changes sync to all devices."
+                },
+            })
+
+            @@include("./components/benefits.html", {
+                "type": "2",
+              "benefit_1": {
+                  "imgPath": "./img/logos/benefits/benefit_7.svg",
+                  "imgAlt": "person",
+                  "title": "Accessibility",
+                  "description": "Dynamic Type and VoiceOver support for a more universal experience for all."
+              },
+              "benefit_2": {
+                  "imgPath": "./img/logos/benefits/benefit_8.svg",
+                  "imgAlt": "lock",
+                  "title": "Screen Lock",
+                  "description": "Protect sensitive information by requiring authentication when the app opens."
+              },
+              "benefit_3": {
+                  "imgPath": "./img/logos/benefits/benefit_9.svg",
+                  "imgAlt": "cloud",
+                  "title": "iCloud Sync",
+                  "description": "Sync on all of your iOS and Mac devices using your Apple ID."
+              },
+          })
+
+          <a href="#" class="features-button">View all features</a>
+        </div>
+
+
     </main>
     @@include("./components/footer.html")
     <script src="scripts/app.min.js"></script>

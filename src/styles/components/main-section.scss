@@ -1,0 +1,52 @@
+.main {
+  &-title {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 78px;
+    letter-spacing: 3px;
+    color: $active-text-color;
+    margin-top: 145px;
+  }
+  &-image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 130px;
+  }
+}
+
+.download-button {
+  display: inline-block;
+  width: 135px;
+  height: 40px;
+  margin-top: 56px;
+}
+
+.features {
+  margin-top: 260px;
+  &-title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 53px;
+    letter-spacing: 1.5px;
+    color: $active-text-color;
+  }
+  &-button {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+    color: $main-text-color;
+    padding: 24px 47px;
+    border: 1px solid #edeef3;
+    border-radius: 8px;
+    margin-top: 75px;
+    margin-bottom: 100px;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    &:hover {
+      box-shadow: 2px 2px 2px $active-text-color;
+    }
+  }
+}
