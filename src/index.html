@@ -111,11 +111,35 @@
                   "imgPath": "./img/logos/benefits/benefit_9.svg",
                   "imgAlt": "cloud",
                   "title": "iCloud Sync",
-                  "description": "Sync on all of your iOS and Mac devices using your Apple ID."
+                  "description": "Share reminders using iMessage, email, or any other text-based service. Changes sync to all devices."
               },
           })
 
-          <a href="#" class="features-button">View all features</a>
+          <div id="hiddenFeaturesContainer" class="hidden-features" data-show-content="false">
+            @@include("./components/benefits.html", {
+                "type": "2",
+              "benefit_1": {
+                  "imgPath": "./img/logos/benefits/benefit_4.svg",
+                  "imgAlt": "voice waves",
+                  "title": "Ask Siri",
+                  "description": "Use Siri to create tasks, a new list, or mark items completed."
+              },
+              "benefit_2": {
+                  "imgPath": "./img/logos/benefits/benefit_5.svg",
+                  "imgAlt": "blocks",
+                  "title": "Widget",
+                  "description": "Ready for iOS 14. View your most recently due task or up to three recent items from any list."
+              },
+              "benefit_3": {
+                  "imgPath": "./img/logos/benefits/benefit_6.svg",
+                  "imgAlt": "user",
+                  "title": "Task Collaboration",
+                  "description": "Share reminders using iMessage, email, or any other text-based service. Changes sync to all devices."
+              },
+          })
+          </div>
+
+          <a href="#" class="features-button" id="viewAllBtn" >View all features</a>
         </div>
 
 

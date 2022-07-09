@@ -16,3 +16,22 @@ export const isWebp = () => {
     }
   });
 };
+
+export const featuresToggle = () => {
+  const button = document.getElementById("viewAllBtn");
+  button.addEventListener("click", featuresButtonClick);
+};
+
+function featuresButtonClick(e) {
+  const { target } = e;
+  const hiddenContainer = document.getElementById("hiddenFeaturesContainer");
+  e.preventDefault();
+  hiddenContainer.attributes["data-show-content"].value =
+    hiddenContainer.attributes["data-show-content"].value === "false"
+      ? "true"
+      : "false";
+
+  if (hiddenContainer.attributes["data-show-content"].value === "true")
+    target.textContent = "Hide all features";
+  else target.textContent = "view all features";
+}
