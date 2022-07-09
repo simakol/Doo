@@ -64,3 +64,21 @@
     display: block;
   }
 }
+
+.last-section {
+  margin-top: 260px;
+  & > h2,
+  h3 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 53px;
+    letter-spacing: 1.5px;
+    color: $active-text-color;
+  }
+  & > .download-button {
+    margin-top: 25px;
+  }
+  &-image {
+    width: 100%;
+  }
+}
