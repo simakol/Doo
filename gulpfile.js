@@ -14,6 +14,7 @@ import { images } from "./src/gulp/tasks/images.js";
 import { fonts } from "./src/gulp/tasks/fonts.js";
 import { zip } from "./src/gulp/tasks/zip.js";
 import { ftp } from "./src/gulp/tasks/ftp.js";
+import { deployGhPages } from "./src/gulp/tasks/deployGhPages.js";
 
 global.app = {
   isBuild: process.argv.includes("--build"),
@@ -42,3 +43,4 @@ export { deployZip };
 export { deployFTP };
 
 gulp.task("default", dev);
+gulp.task("deployGH", deployGhPages);

@@ -8,7 +8,8 @@
     "dev": "gulp",
     "build": "gulp build --build",
     "zip": "gulp deployZip --build",
-    "deploy": "gulp deployFTP --build"
+    "deploy": "gulp deployFTP --build",
+    "deployGH": "gulp deployGH --build"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
     "gulp-file-include": "^2.3.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^8.0.0",
