@@ -1,8 +1,10 @@
 {
-  "name": "actual-gulp-config",
+  "name": "Doo",
   "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
+  "description": "Web page for simple todo list application.",
+  "homepage": "https://simakol.github.io/Doo/",
+  "author": "https://github.com/simakol",
+  "license": "ISC",
   "type": "module",
   "scripts": {
     "dev": "gulp",
@@ -11,9 +13,6 @@
     "deploy": "gulp deployFTP --build",
     "deployGH": "gulp deployGH --build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.9",
     "browserslist": "^4.20.2",
