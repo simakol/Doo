@@ -1157,46 +1157,43 @@ body {
   color: #383938;
 }
 .nav-menu-download {
-  color: #6e6d7a;
   padding: 16px 33px;
   background-color: #f5f6f9;
-  border-radius: 8px;
   position: relative;
-  transition: 0.5s text-shadow 0.25s;
+  transition: color 0.5s;
+  color: #6e6d7a;
 }
 .nav-menu-download:hover {
-  transition-duration: 1s;
-  text-shadow: 1px 1px 1px black;
+  color: #383938;
 }
 .nav-menu-download::before, .nav-menu-download::after {
   content: "";
   position: absolute;
   border: 1px solid transparent;
-  border-radius: 8px;
   width: 0;
   height: 0;
-  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 .nav-menu-download::before {
   top: 0;
   left: 0;
 }
 .nav-menu-download::after {
-  bottom: 0px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
 }
 .nav-menu-download:hover::before, .nav-menu-download:hover::after {
-  width: 98%;
-  height: 98%;
+  width: 99%;
+  height: 96%;
 }
 .nav-menu-download:hover::before {
   border-top-color: #383938;
   border-right-color: #383938;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
 }
 .nav-menu-download:hover::after {
   border-bottom-color: #383938;
   border-left-color: #383938;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 
 .main-title {
