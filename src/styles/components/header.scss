@@ -27,16 +27,14 @@
     }
   }
   &-download {
-    color: $main-text-color;
     padding: 16px 33px;
     background-color: #f5f6f9;
-    border-radius: 8px;
     position: relative;
-    transition: 0.5s text-shadow 0.25s;
+    transition: color 0.5s;
+    color: $main-text-color;
 
     &:hover {
-      transition-duration: 1s;
-      text-shadow: 1px 1px 1px black;
+      color: $active-text-color;
     }
 
     &::before,
@@ -44,12 +42,8 @@
       content: "";
       position: absolute;
       border: 1px solid transparent;
-      border-radius: 8px;
       width: 0;
       height: 0;
-      transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-      transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
-        height 0.25s ease-out 0.75s;
     }
     &::before {
       top: 0;
@@ -57,22 +51,25 @@
     }
 
     &::after {
-      bottom: 0px;
-      right: 0px;
+      bottom: 0;
+      right: 0;
     }
 
     &:hover::before,
     &:hover::after {
-      width: 98%;
-      height: 98%;
+      width: 99%;
+      height: 96%;
     }
     &:hover::before {
       border-top-color: $active-text-color;
       border-right-color: $active-text-color;
+      transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
     }
     &:hover::after {
       border-bottom-color: $active-text-color;
       border-left-color: $active-text-color;
+      transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+        height 0.25s ease-out 0.75s;
     }
   }
 }

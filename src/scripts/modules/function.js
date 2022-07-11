@@ -26,7 +26,7 @@ export const featuresToggle = () => {
 
 export const initAOS = () => {
   AOS.init({
-    duration: 500,
+    duration: 300,
     easing: "ease-in-cubic",
     once: true,
   });
