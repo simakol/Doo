@@ -13,6 +13,8 @@
     <meta property="og:description" content="Simple todo list application for apple devices.">
     <meta property="og:url" content="https://simakol.github.io/Doo/">
     <meta property="og:image" content="./img/phones.png">
+    <meta property="og:image:width" content="1440">
+    <meta property="og:image:height" content="712">
     <link rel="stylesheet" href="styles/style.min.css">
 </head>
 
@@ -20,13 +22,14 @@
     @@include("./components/header.html")
     <main class="main">
         <section class="container">
-            <h1 class="main-title" data-aos="fade-up">Simplify your to-do list</h1>
+            <h1 class="main-title" data-aos="fade-up" 
+            >Simplify your to-do list</h1>
             <a href="#" class="download-button" data-aos="fade-up" data-aos-delay="200">
                 <img src="./img/download.png" alt="download on the app store">
             </a>
         </section>
-        <img class="main-image" data-aos="flip-down" data-aos-delay="500" src="./img/phones.png"
-            alt="iphones with app demonstration">
+        <img class="main-image" data-aos="flip-down" data-aos-delay="500"
+         src="./img/phones.png" alt="iphones with app demonstration">
 
         @@include("./components/benefits.html", {
         "type": "1",
@@ -49,40 +52,35 @@
 
         @@include("./components/description.html", {
         "titleText": "Designed with purpose",
-        "subtitleText": "Popular productivity apps have tagging, color coding, folders, and subfolders. They call it
-        organization. We call it bloat. Doo is everything you need and nothing you don't.",
+        "subtitleText": "Popular productivity apps have tagging, color coding, folders, and subfolders. They call it organization. We call it bloat. Doo is everything you need and nothing you don't.",
         "imagesAmount": "1",
         "imgPath": "./img/description-phone_1.png"
         })
 
         @@include("./components/description.html", {
         "titleText": "Effortless task entry",
-        "subtitleText": "Create a task by typing a title. Tap an icon above the keyboard to set dates, locations, notes,
-        and more. Edit by tapping the text you'd like to change. Simple.",
+        "subtitleText": "Create a task by typing a title. Tap an icon above the keyboard to set dates, locations, notes, and more. Edit by tapping the text you'd like to change. Simple.",
         "imagesAmount": "1",
         "imgPath": "./img/description-phone_2.png"
         })
 
         @@include("./components/description.html", {
         "titleText": "One-step habit building",
-        "subtitleText": "Tap the Edit button to select your tasks for the day and snooze the rest. Doo helps you focus
-        and avoid productivity guilt.",
+        "subtitleText": "Tap the Edit button to select your tasks for the day and snooze the rest. Doo helps you focus and avoid productivity guilt.",
         "imagesAmount": "1",
         "imgPath": "./img/description-phone_1.png"
         })
 
         @@include("./components/description.html", {
         "titleText": "Keeps your data private",
-        "subtitleText": "Privacy is a fundamental right. That's why Doo includes screen locking. No 'Pro' upgrade
-        required. We also don't collect your data. What does this mean? No trackers, no cookies, and no analytics.
-        Simple — the way it should be.",
+        "subtitleText": "Privacy is a fundamental right. That's why Doo includes screen locking. No 'Pro' upgrade required. We also don't collect your data. What does this mean? No trackers, no cookies, and no analytics. Simple — the way it should be.",
         "imagesAmount": "2",
         "img1Path": "./img/lock.png",
         "img2Path": "./img/unlock.png"
         })
 
         <section class="features container">
-            <h2 class="features-title" data-aos="fade-up">Other things you might be wondering about</h2>
+            <h2 class="features-title"  data-aos="fade-up">Other things you might be wondering about</h2>
 
             @@include("./components/benefits.html", {
             "type": "2",
@@ -96,15 +94,13 @@
             "imgPath": "./img/logos/benefits/benefit_5.svg",
             "imgAlt": "blocks",
             "title": "Widget",
-            "description": "Ready for iOS 14. View your most recently due task or up to three recent items from any
-            list."
+            "description": "Ready for iOS 14. View your most recently due task or up to three recent items from any list."
             },
             "benefit_3": {
             "imgPath": "./img/logos/benefits/benefit_6.svg",
             "imgAlt": "user",
             "title": "Task Collaboration",
-            "description": "Share reminders using iMessage, email, or any other text-based service. Changes sync to all
-            devices."
+            "description": "Share reminders using iMessage, email, or any other text-based service. Changes sync to all devices."
             },
             })
 
@@ -126,8 +122,7 @@
             "imgPath": "./img/logos/benefits/benefit_9.svg",
             "imgAlt": "cloud",
             "title": "iCloud Sync",
-            "description": "Share reminders using iMessage, email, or any other text-based service. Changes sync to all
-            devices."
+            "description": "Share reminders using iMessage, email, or any other text-based service. Changes sync to all devices."
             },
             })
 
@@ -144,58 +139,52 @@
                 "imgPath": "./img/logos/benefits/benefit_5.svg",
                 "imgAlt": "blocks",
                 "title": "Widget",
-                "description": "Ready for iOS 14. View your most recently due task or up to three recent items from any
-                list."
+                "description": "Ready for iOS 14. View your most recently due task or up to three recent items from any list."
                 },
                 "benefit_3": {
                 "imgPath": "./img/logos/benefits/benefit_6.svg",
                 "imgAlt": "user",
                 "title": "Task Collaboration",
-                "description": "Share reminders using iMessage, email, or any other text-based service. Changes sync to
-                all devices."
+                "description": "Share reminders using iMessage, email, or any other text-based service. Changes sync to all devices."
                 },
                 })
                 @@include("./components/benefits.html", {
-                "type": "2",
-                "benefit_1": {
-                "imgPath": "./img/logos/benefits/benefit_4.svg",
-                "imgAlt": "voice waves",
-                "title": "Ask Siri",
-                "description": "Use Siri to create tasks, a new list, or mark items completed."
-                },
-                "benefit_2": {
-                "imgPath": "./img/logos/benefits/benefit_5.svg",
-                "imgAlt": "blocks",
-                "title": "Widget",
-                "description": "Ready for iOS 14. View your most recently due task or up to three recent items from any
-                list."
-                },
-                "benefit_3": {
-                "imgPath": "./img/logos/benefits/benefit_6.svg",
-                "imgAlt": "user",
-                "title": "Task Collaboration",
-                "description": "Share reminders using iMessage, email, or any other text-based service. Changes sync to
-                all devices."
-                },
-                })
+                    "type": "2",
+                    "benefit_1": {
+                    "imgPath": "./img/logos/benefits/benefit_4.svg",
+                    "imgAlt": "voice waves",
+                    "title": "Ask Siri",
+                    "description": "Use Siri to create tasks, a new list, or mark items completed."
+                    },
+                    "benefit_2": {
+                    "imgPath": "./img/logos/benefits/benefit_5.svg",
+                    "imgAlt": "blocks",
+                    "title": "Widget",
+                    "description": "Ready for iOS 14. View your most recently due task or up to three recent items from any list."
+                    },
+                    "benefit_3": {
+                    "imgPath": "./img/logos/benefits/benefit_6.svg",
+                    "imgAlt": "user",
+                    "title": "Task Collaboration",
+                    "description": "Share reminders using iMessage, email, or any other text-based service. Changes sync to all devices."
+                    },
+                    })
             </div>
 
-            <a href="#" class="features-button" id="viewAllBtn">View all features</a>
+            <a href="#" class="features-button" id="viewAllBtn" >View all features</a>
         </section>
 
         <section class="container last-section">
             <h2 class="last-section-title" data-aos="fade-up">Build better habits.</h2>
-            <h3 class="last-section-subtitle" data-aos="fade-up" data-aos-delay="100">Get the to-do app that helps you
-                focus.</h3>
-            <a href="#" class="download-button" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="last-section-subtitle"  data-aos="fade-up" data-aos-delay="100">Get the to-do app that helps you focus.</h3>
+            <a href="#" class="download-button"  data-aos="fade-up" data-aos-delay="200">
                 <img src="./img/download.png" alt="download on the app store">
             </a>
-            <img class="last-section-image" src="./img/last-section-image.png" alt="ipad, iphone and apple watch"
-                data-aos="zoom-in-down" data-aos-delay="300">
+            <img class="last-section-image" src="./img/last-section-image.png" alt="ipad, iphone and apple watch" data-aos="zoom-in-down" data-aos-delay="300">
         </section>
     </main>
     @@include("./components/footer.html")
     <script src="scripts/app.min.js"></script>
-</body>
-
+</body>  
+  
 </html>
