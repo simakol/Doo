@@ -1,3 +1,5 @@
+import AOS from "aos";
+
 export const isWebp = () => {
   function testWebP(callback) {
     var webP = new Image();
@@ -20,6 +22,14 @@ export const isWebp = () => {
 export const featuresToggle = () => {
   const button = document.getElementById("viewAllBtn");
   button.addEventListener("click", featuresButtonClick);
+};
+
+export const initAOS = () => {
+  AOS.init({
+    duration: 500,
+    easing: "ease-in-cubic",
+    once: true,
+  });
 };
 
 function featuresButtonClick(e) {

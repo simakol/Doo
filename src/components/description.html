@@ -1,15 +1,17 @@
 <div class="description container">
-    <h2 class="description-title">@@titleText</h2>
-    <h3 class="description-subtitle">@@subtitleText</h3>
+    <h2 class="description-title" data-aos="fade-up">@@titleText</h2>
+    <h3 class="description-subtitle" data-aos="fade-up" data-aos-delay="100">@@subtitleText</h3>
     @@if(imagesAmount === "1"){
-    <div class="description-image-wrapper">
-        <img src=@@imgPath alt="iphone">
+    <div data-aos="zoom-in-down" data-aos-delay="200">
+        <div class="description-image-wrapper">
+            <img src=@@imgPath alt="iphone">
+        </div>
     </div>
     }
     @@if(imagesAmount === "2"){
     <div class="description-images-wrapper">
-        <img src=@@img1Path alt="lock">
-        <img src=@@img2Path alt="iphone">
+        <img src=@@img1Path alt="lock"  data-aos="fade-left" data-aos-delay="200">
+        <img src=@@img2Path alt="iphone"  data-aos="fade-right" data-aos-delay="200">
     </div>
     }
 </div>

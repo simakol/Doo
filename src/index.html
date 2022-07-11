@@ -14,12 +14,14 @@
     @@include("./components/header.html")
     <main class="main">
         <section class="container">
-            <h1 class="main-title">Simplify your to-do list</h1>
-            <a href="#" class="download-button">
+            <h1 class="main-title" data-aos="fade-up" 
+            >Simplify your to-do list</h1>
+            <a href="#" class="download-button" data-aos="fade-up" data-aos-delay="200">
                 <img src="./img/download.png" alt="download on the app store">
             </a>
         </section>
-        <img class="main-image" src="./img/phones.png" alt="iphones with app demonstration">
+        <img class="main-image" data-aos="flip-down" data-aos-delay="500"
+         src="./img/phones.png" alt="iphones with app demonstration">
 
         @@include("./components/benefits.html", {
         "type": "1",
@@ -70,7 +72,7 @@
         })
 
         <section class="features container">
-            <h2 class="features-title">Other things you might be wondering about</h2>
+            <h2 class="features-title"  data-aos="fade-up">Other things you might be wondering about</h2>
 
             @@include("./components/benefits.html", {
             "type": "2",
@@ -140,20 +142,20 @@
                 })
             </div>
 
-            <a href="#" class="features-button" id="viewAllBtn">View all features</a>
+            <a href="#" class="features-button" id="viewAllBtn" >View all features</a>
         </section>
 
         <section class="container last-section">
-            <h2 class="last-section-title">Build better habits.</h2>
-            <h3 class="last-section-subtitle">Get the to-do app that helps you focus.</h3>
-            <a href="#" class="download-button">
+            <h2 class="last-section-title" data-aos="fade-up">Build better habits.</h2>
+            <h3 class="last-section-subtitle"  data-aos="fade-up" data-aos-delay="100">Get the to-do app that helps you focus.</h3>
+            <a href="#" class="download-button"  data-aos="fade-up" data-aos-delay="200">
                 <img src="./img/download.png" alt="download on the app store">
             </a>
-            <img class="last-section-image" src="./img/last-section-image.png" alt="ipad, iphone and apple watch">
+            <img class="last-section-image" src="./img/last-section-image.png" alt="ipad, iphone and apple watch" data-aos="zoom-in-down" data-aos-delay="300">
         </section>
     </main>
     @@include("./components/footer.html")
     <script src="scripts/app.min.js"></script>
-</body>
-
+</body>  
+  
 </html>

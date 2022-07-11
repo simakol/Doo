@@ -13,7 +13,7 @@ export const path = {
   src: {
     html: "src/**.html",
     styles: "src/styles/*.scss",
-    js: "src/scripts/*.js",
+    js: "src/scripts/",
     img: "src/img/**/*.{jpg,jpeg,png,gif,webp,ico}",
     svg: "src/img/**/*.svg",
     fonts: "src/fonts/**/*",

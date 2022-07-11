@@ -2,7 +2,7 @@ import webpackStream from "webpack-stream";
 
 export const js = () =>
   app.gulp
-    .src(app.path.src.js, { sourcemaps: app.isDev })
+    .src(`${app.path.src.js}app.js`, { sourcemaps: app.isDev })
     .pipe(
       webpackStream({
         mode: app.isBuild ? "production" : "development",
