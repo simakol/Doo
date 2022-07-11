@@ -18,6 +18,7 @@
     line-height: 13px;
     color: $main-text-color;
     &-item {
+      display: inline-block;
       color: $main-text-color;
       margin-top: 26px;
       transition: 0.5s;
