@@ -40,6 +40,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "smooth-scroll": "^16.1.3"
   }
 }

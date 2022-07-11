@@ -1,4 +1,5 @@
 import AOS from "aos";
+import SmoothScroll from "smooth-scroll";
 
 export const isWebp = () => {
   function testWebP(callback) {
@@ -36,12 +37,19 @@ function featuresButtonClick(e) {
   const { target } = e;
   const hiddenContainer = document.getElementById("hiddenFeaturesContainer");
   e.preventDefault();
+
+  const scroll = new SmoothScroll();
+
   hiddenContainer.attributes["data-show-content"].value =
     hiddenContainer.attributes["data-show-content"].value === "false"
       ? "true"
       : "false";
 
-  if (hiddenContainer.attributes["data-show-content"].value === "true")
+  if (hiddenContainer.attributes["data-show-content"].value === "true") {
     target.textContent = "Hide all features";
-  else target.textContent = "view all features";
+    scroll.animateScroll(document.querySelector("#viewAllBtn"));
+  } else {
+    target.textContent = "view all features";
+    scroll.animateScroll(document.querySelector("#featuresTop"));
+  }
 }
