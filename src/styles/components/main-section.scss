@@ -11,6 +11,7 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 130px;
+    max-width: 90vw;
   }
 }
 
@@ -29,6 +30,12 @@
     line-height: 53px;
     letter-spacing: 1.5px;
     color: $active-text-color;
+  }
+
+  & .benefits {
+    &-item {
+      margin-left: 0;
+    }
   }
   &-button {
     display: inline-block;
@@ -57,11 +64,12 @@
       box-shadow: 3px 3px 1px 2px $active-text-color;
     }
   }
+
   .hidden-features {
     opacity: 0;
     pointer-events: none;
     transition: all 0.5s;
-    margin-top: -48%;
+    margin-top: -750px;
   }
   .hidden-features[data-show-content="true"] {
     opacity: 1;
