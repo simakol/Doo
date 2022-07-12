@@ -105,4 +105,31 @@
       margin-top: 30px;
     }
   }
+
+  .features {
+    margin-top: 260px;
+
+    & .benefits {
+      &-item {
+        margin-left: 0;
+        margin-bottom: 20px;
+        &::before {
+          bottom: -15px;
+        }
+      }
+    }
+  }
+  .hidden-features {
+    display: none;
+  }
+  .hidden-features[data-show-content="true"] {
+    display: block;
+  }
+
+  .last-section {
+    margin-top: 200px;
+    &-image {
+      margin-top: 50px;
+    }
+  }
 }

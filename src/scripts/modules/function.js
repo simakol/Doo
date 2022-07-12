@@ -50,10 +50,11 @@ function featuresButtonClick(e) {
     hiddenContainer.attributes["data-show-content"].value === "false"
       ? "true"
       : "false";
-
   if (hiddenContainer.attributes["data-show-content"].value === "true") {
     target.textContent = "Hide all features";
-    scroll.animateScroll(document.querySelector("#viewAllBtn"));
+    document.body.offsetWidth >= 768
+      ? scroll.animateScroll(document.querySelector("#viewAllBtn"))
+      : scroll.animateScroll(document.querySelector("#hiddenFeaturesCenter"));
   } else {
     target.textContent = "view all features";
     scroll.animateScroll(document.querySelector("#featuresTop"));
@@ -72,10 +73,12 @@ function burgerMenuClick(e) {
     button.classList.add("open");
     document.body.style.overflow = "hidden";
     const menu = document.querySelector(".nav-menu");
-    menu.addEventListener("click", (e) => closeMobileMenuOnClick(e, closeMenu));
+    menu.addEventListener("click", ({ target }) =>
+      closeMobileMenuOnClick(target, closeMenu)
+    );
   }
 }
 
-function closeMobileMenuOnClick(e, closeMenu) {
-  if (!e.target.classList.contains("nav-menu-item")) closeMenu();
+function closeMobileMenuOnClick(target, closeMenu) {
+  if (!target.classList.contains("nav-menu-item")) closeMenu();
 }
