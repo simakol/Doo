@@ -24,6 +24,10 @@ export const featuresToggle = () => {
   const button = document.getElementById("viewAllBtn");
   button.addEventListener("click", featuresButtonClick);
 };
+export const burgerMenuToggle = () => {
+  const button = document.querySelector(".burger-menu");
+  button.addEventListener("click", burgerMenuClick);
+};
 
 export const initAOS = () => {
   AOS.init({
@@ -32,6 +36,8 @@ export const initAOS = () => {
     once: true,
   });
 };
+
+//functions
 
 function featuresButtonClick(e) {
   const { target } = e;
@@ -52,4 +58,24 @@ function featuresButtonClick(e) {
     target.textContent = "view all features";
     scroll.animateScroll(document.querySelector("#featuresTop"));
   }
+}
+
+function burgerMenuClick(e) {
+  const button = document.querySelector(".burger-menu");
+  const closeMenu = () => {
+    button.classList.remove("open");
+    document.body.style.overflow = "auto";
+  };
+  if (button.classList.contains("open")) {
+    closeMenu();
+  } else {
+    button.classList.add("open");
+    document.body.style.overflow = "hidden";
+    const menu = document.querySelector(".nav-menu");
+    menu.addEventListener("click", (e) => closeMobileMenuOnClick(e, closeMenu));
+  }
+}
+
+function closeMobileMenuOnClick(e, closeMenu) {
+  if (!e.target.classList.contains("nav-menu-item")) closeMenu();
 }
