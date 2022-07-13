@@ -1,6 +1,6 @@
 .footer {
   margin-top: 130px;
-  width: 100%;
+  width: 90vw;
   border-top: 1px solid #edeef3;
   padding: 91px 0 77px;
   text-align: left;
@@ -50,5 +50,39 @@
     margin-top: 100px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .footer {
+    margin-top: 100px;
+    padding: 50px 15px 70px;
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &-links {
+      width: 90vw;
+      flex-wrap: wrap;
+      font-size: 15px;
+
+      &-item {
+        display: inline-block;
+        color: $main-text-color;
+        margin-top: 26px;
+        transition: 0.5s;
+      }
+      & > div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .copyright {
+      width: 100%;
+      margin-top: 50px;
+      & > span {
+        font-size: 15px;
+      }
+    }
   }
 }
