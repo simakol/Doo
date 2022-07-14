@@ -11,14 +11,13 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 130px;
-    max-width: 90vw;
+    width: 95%;
+    height: auto;
   }
 }
 
 .download-button {
   display: inline-block;
-  width: 135px;
-  height: 40px;
   margin-top: 56px;
 }
 
@@ -92,6 +91,7 @@
   }
   &-image {
     width: 100%;
+    height: auto;
   }
 }
 
