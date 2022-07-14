@@ -2,6 +2,8 @@
 
 Web page for simple todo list application.
 
+[Preview](https://simakol.github.io/Doo/)
+
 ![Project preview](./preview.png)
 
 ## Attention to Details
