@@ -8,10 +8,10 @@ Web page for simple todo list application.
 
 ## Attention to Details
 
-- Beautiful and smooth scrolling animations
+- Beautiful and smooth scrolling and hovering animations
 - High performance on different devices
 - Adaptive layout 
-- Custom Selection
+- Custom selection
 - Custom scrollbar
 
 ## Technologies udes
