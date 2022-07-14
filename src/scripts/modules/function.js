@@ -37,7 +37,7 @@ export const initAOS = () => {
   });
 };
 
-//functions
+// helper functions
 
 function featuresButtonClick(e) {
   const { target } = e;

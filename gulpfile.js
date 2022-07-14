@@ -11,7 +11,6 @@ import { html } from "./src/gulp/tasks/html.js";
 import { scss } from "./src/gulp/tasks/scss.js";
 import { js } from "./src/gulp/tasks/js.js";
 import { images } from "./src/gulp/tasks/images.js";
-import { fonts } from "./src/gulp/tasks/fonts.js";
 import { zip } from "./src/gulp/tasks/zip.js";
 import { ftp } from "./src/gulp/tasks/ftp.js";
 import { deployGhPages } from "./src/gulp/tasks/deployGhPages.js";
@@ -31,7 +30,7 @@ const watcher = () => {
   gulp.watch(path.watch.img, images);
 };
 
-const mainTasks = gulp.parallel(html, scss, js, images, fonts);
+const mainTasks = gulp.parallel(html, scss, js, images);
 const dev = gulp.series(clean, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(clean, mainTasks);
 const deployZip = gulp.series(clean, mainTasks, zip);

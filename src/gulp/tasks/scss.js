@@ -3,7 +3,6 @@ import dartSass from "sass";
 import autoprefixer from "gulp-autoprefixer";
 import concat from "gulp-concat";
 import csso from "gulp-csso";
-import groupCssMediaQueries from "gulp-group-css-media-queries";
 import webpcss from "gulp-webpcss";
 
 const sass = gulpSass(dartSass);
@@ -16,7 +15,6 @@ export const scss = () =>
         outputStyle: "expanded",
       })
     )
-    // .pipe(app.plugins.if(app.isBuild, groupCssMediaQueries()))
     .pipe(
       app.plugins.if(
         app.isBuild,
