@@ -17,6 +17,11 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   overflow-x: hidden;
+
+  &.menu-opened {
+    position: fixed;
+    overflow: hidden;
+  }
 }
 
 .container {
@@ -24,6 +29,7 @@ body {
   text-align: center;
   max-width: $containerWidth;
   padding: 0 15px;
+  overflow: hidden;
 }
 
 .link-hover {

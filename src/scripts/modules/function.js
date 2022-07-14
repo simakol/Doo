@@ -65,13 +65,14 @@ function burgerMenuClick(e) {
   const button = document.querySelector(".burger-menu");
   const closeMenu = () => {
     button.classList.remove("open");
-    document.body.style.overflow = "auto";
+    document.body.classList.remove("menu-opened");
   };
   if (button.classList.contains("open")) {
     closeMenu();
   } else {
     button.classList.add("open");
-    document.body.style.overflow = "hidden";
+    document.body.classList.add("menu-opened");
+
     const menu = document.querySelector(".nav-menu");
     menu.addEventListener("click", ({ target }) =>
       closeMobileMenuOnClick(target, closeMenu)

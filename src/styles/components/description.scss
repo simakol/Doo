@@ -20,6 +20,7 @@
   &-image-wrapper {
     margin-top: 72px;
     background: #f0f2fa;
+    overflow: hidden;
     & > img {
       transition: transform 1s ease;
       transform: perspective(800px) rotateY(-0.1deg);
